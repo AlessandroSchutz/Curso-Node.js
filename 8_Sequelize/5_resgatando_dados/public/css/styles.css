@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: rgb(230, 224, 218);
+}
+
+#navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  background-color: darkgray;
+  padding: 7px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: black;
+
+  &&:hover {
+    background-color: rgba(169, 169, 169, 0.541);
+  }
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.form-checkbox {
+  flex-direction: row;
+}
+
+.form-checkbox input {
+  margin-right: 10px;
+}
+
+.form-control input {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  background-color: #429745; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remover bordas */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remover sublinhado */
+  display: inline-block; /* Display inline */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margem */
+  cursor: pointer; /* Mudar o cursor ao passar o mouse */
+
+  &&:hover {
+    background-color: #4caf50;
+  }
+}
+
+/* USERS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container .item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  flex: 1 1 29%;
+  max-width: 29%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item h2,
+.item p {
+  margin-bottom: 0.8em;
+}
